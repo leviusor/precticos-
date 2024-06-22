@@ -1,8 +1,12 @@
+PImage img;
+
+
+
 void setup() {
   size(800, 420);
   background(0); 
   noLoop(); // Detener el bucle
-  
+  img =loadImage("arop.png");
 }
 
 void draw() {
@@ -11,7 +15,7 @@ void draw() {
   int rows = 9;       
   int cols = 9;       
   float cellSize = 20; 
-
+image(img, 1, 1, 400, 450);
  // Dibujar la grilla
   for (int i = 0; i < rows; i++) {
     float cellHeight = (i % 2 == 0) ? 3 : 1.5;
