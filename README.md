@@ -1,1 +1,1 @@
-# precticos-
+# practicos-
